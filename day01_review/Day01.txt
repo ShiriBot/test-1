@@ -1,0 +1,35 @@
+* Zen Coding
+ - 규칙은 반드시 공백이 없고, 꺽쇠업시(<>) 태그 이름만으로 젠 코딩 문법에 맞게 입력하고 tab or enter키를 누르면 된다
+
+* Zen Coding 문법
+ - 반복 생성을 하고 싶다면 곱하기 기호(*)와 반복 횟수를 사용한다.
+  ex 1) div*5 : 5회 반복생성 (<div></div><div></div><div></div><div></div><div></div>)
+
+  ex 2) : id 선택자 생성은 # 
+      -> div#wrap [엔터] <div id=’wrap’></div>
+    
+  ex 3) : class 선택자 생성은 . 
+      -> div.container [엔터] <div class=’contanier‘></div>
+
+  ex 4) : 문자열(string)은 중괄호{}를 사용
+      -> div{문자열 입력} [엔터] <div>문자열 입력 </div>
+
+  ex 5) : 속성(property) 대괄호[]를 사용 
+      -> input[type=text name= irum id=irum]  [엔터] <input type=’text’ name=’irum’ id=’irum’>
+
+  그룹 단위는 소괄호()를 사용합니다.
+    $ 사용 한 자리 숫자 1 2 3 ...
+    $$ 사용 두 자리 숫자 01 02 03 ...
+    $$$ 사용 세 자리 숫자 001 002 003 ...
+
+    {} 문자열 내용 입력 [예] div{문자열}
+    [] 속성 입력 [예] input[type=text name=irum id=irum]
+      > 자식 요소 생성 [예] div>p
+      + 형제 요소 생성 [예] div>p+p
+      ^ 한 단계 위로(이전 부모 조상 위치) 이동 [예] div>ul>li^ul>li
+      ^^ 두 단계 위로 이동 [예] div>ul>li^^div>ul>li
+
+* Entity Code
+ - Entity Code란 html 문서 내에서 키보드로 입력 할 수 없는 특수문자를 사용하도록 만들어진 특수문자 코드이다.
+ - 요즘은 UTF-8을 주로 이용하기 때문에 특수문자가 깨지지 않지만, W3c 엔티티가 아닌 특수문자는 오류로 인식 하기 때문에 특수문자는 엔티티 코드로 작성하는 것이 좋다.
+ 
